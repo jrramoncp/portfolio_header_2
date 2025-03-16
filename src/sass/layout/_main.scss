@@ -1,2 +1,66 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
+
+main{
+    // TITLE
+    .title{
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        h1{
+            text-align: center;
+            font-size: 96px;
+            position: relative;
+            &::after{
+                content:"";
+                width: 7%;
+                height: 5px;
+                display: inline-block;
+                background-color: v.$decoration-bar-color;
+                position: absolute;
+                bottom: 5px;
+                left: 24%;
+                
+            }
+        }
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        .hero__service{
+            grid-column: 1;
+            max-width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            article{
+                .article__container{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    img{
+                        max-width: 50px;
+                    }
+                    h3{
+                        font-weight: 500;
+                    }
+                }
+                p{
+                    line-height: 32px;
+                }
+            }
+            
+        }
+        img{
+            grid-column: 2;
+            max-width: 550px;
+        }
+
+        .hero__content{
+            grid_column: 3;
+        }
+    }
+}
