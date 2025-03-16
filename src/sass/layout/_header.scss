@@ -1,3 +1,48 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
+header{
+    .header__container{
+        padding-top: 20px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .main__nav{
+            ul{
+                @include m.reset-list;
+                li{
+                    a{
+                        color: v.$color-black;
+                        position: relative;
+                        
+                        &:hover{
+                            &::after{
+                                content:"";
+                                width: 80%;
+                                height: 2px;
+                                display: inline-block;
+                                background-color: v.$decoration-bar-color;
+                                position: absolute;
+                                bottom: -5px;
+                                left: 0;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .logo{
+            width: auto;
+        }
+        .rrss__nav{
+            ul{
+                @include m.reset-list;
+            }
+        }
+    }
+}

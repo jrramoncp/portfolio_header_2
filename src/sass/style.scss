@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-size: 18px;
     font-family: v.$primary-font;
+    color: v.$color-grey;
 }
 
 //BASE STYLES
@@ -22,4 +23,9 @@ body{
     padding-right: 16px;
     margin-right: auto;
     margin-left: auto;
+}
+
+h1,h2,h3,h4{
+    font-family: v.$title-font;
+    color: v.$color-black;
 }
