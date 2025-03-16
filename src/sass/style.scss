@@ -1,0 +1,29 @@
+@use "abstract/_variables" as v;
+@use "abstract/_tipography";
+@use "layout/layout";
+
+// RESET // 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: v.$primary-font;
+}
+
+//BASE STYLES
+
+body{
+    background-image: linear-gradient(to right, white 50%, v.$background-secondary-color 50% 100%);
+}
+.page{
+    max-width: 1400px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p{
+    color: blue;
+}
