@@ -14,7 +14,7 @@
 //BASE STYLES
 
 body{
-    background-image: linear-gradient(to right, white 50%, v.$background-secondary-color 50% 100%);
+    background-image: url(/img/background.png);
 }
 .page{
     max-width: 1400px;
@@ -22,8 +22,4 @@ body{
     padding-right: 16px;
     margin-right: auto;
     margin-left: auto;
-}
-
-p{
-    color: blue;
 }
